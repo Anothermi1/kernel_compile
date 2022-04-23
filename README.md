@@ -1,8 +1,13 @@
 export ARCH=arm64 && export SUBARCH=arm64
+
 export PATH="/home/anothermi/proton-clang/bin:$PATH"
+
 export STRIP="/home/anothermi/proton-clang/aarch64-linux-gnu/bin/strip"
+
 make O=out clean && make O=out mrpoper
+
 make tissot_defconfig
+
 make -j$(nproc --all) O=out \
 ARCH=arm64 \
 AR=llvm-ar \
