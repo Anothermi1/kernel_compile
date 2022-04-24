@@ -6,7 +6,7 @@ export STRIP="/home/anothermi/proton-clang/aarch64-linux-gnu/bin/strip"
 
 make O=out clean && make O=out mrpoper
 
-make tissot_defconfig
+make tissot_defconfig O=out
 
 make -j$(nproc --all) O=out \
 ARCH=arm64 \
