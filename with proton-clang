@@ -1,8 +1,8 @@
 export ARCH=arm64 && export SUBARCH=arm64
 
-export PATH="/home/anothermi/proton-clang/bin:$PATH"
+export PATH="/home/kakashi/proton-clang/bin:$PATH"
 
-export STRIP="/home/anothermi/proton-clang/aarch64-linux-gnu/bin/strip"
+export STRIP="/home/kakashi/proton-clang/aarch64-linux-gnu/bin/strip"
 
 make O=out clean && make O=out mrpoper
 
