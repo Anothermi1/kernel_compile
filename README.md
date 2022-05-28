@@ -16,7 +16,7 @@ example
     export PATH="/home/kakashi/proton-clang/bin:$PATH"
 #### Export the ```strip```, for ```arm64```
     export STRIP="/<path>/proton-clang/aarch64-linux-gnu/bin/strip"
-### Export the ```strip```, for ```arm32```
+#### Export the ```strip```, for ```arm32```
     export STRIP="/home/kakashi/proton-clang/arm-linux-gnueabi/bin/strip"
     
 ### If you never ccompile kernel before (it's first time), skip this step, go to defconfig
