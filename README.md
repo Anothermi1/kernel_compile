@@ -9,10 +9,15 @@ Export your device arch
     export ARCH=arm64 && export SUBARCH=arm64
 #### For ```arm32``` device
     export ARCH=arm32 && export SUBARCH=arm32
-#### Export your ```clang```
+#### Export your ```proton-clang```
+    export PATH="/<path>/proton-clang/bin:$PATH"
+example 
+
     export PATH="/home/kakashi/proton-clang/bin:$PATH"
-#### Export the ```strip``` 
-    export STRIP="/home/kakashi/proton-clang/aarch64-linux-gnu/bin/strip"
+#### Export the ```strip```, for ```arm64```
+    export STRIP="/<path>/proton-clang/aarch64-linux-gnu/bin/strip"
+### Export the ```strip```, for ```arm32```
+    export STRIP="/home/kakashi/proton-clang/arm-linux-gnueabi/bin/strip"
     
 ### If you never ccompile kernel before (it's first time), skip this step, go to defconfig
 
